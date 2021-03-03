@@ -1,21 +1,21 @@
 {
-  "name": "kenzov",
+  "name": "oleynik",
   "version": "1.0.0",
-  "description": "Oleg Kenzov. Official Site",
+  "description": "OLEYNIK & STOBOY. Official Site",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JuliaAgama/kenzov.git"
+    "url": "git+https://github.com/JuliaAgama/oleynik.git"
   },
-  "author": "Julia Verchyonova, Olexander Shaporda, Roman Loboda",
+  "author": "Julia Verchyonova",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JuliaAgama/kenzov/issues"
+    "url": "https://github.com/JuliaAgama/oleynik/issues"
   },
-  "homepage": "https://github.com/JuliaAgama/kenzov#readme",
+  "homepage": "https://github.com/JuliaAgama/oleynik#readme",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",

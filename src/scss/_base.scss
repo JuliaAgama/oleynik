@@ -8,6 +8,8 @@
  //font-family: 'Lato', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Montserrat:400,400i,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
 
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 // Adobe fonts:
 
@@ -37,7 +39,9 @@
 
 
 
-$brand-color: #0e1213;
+$brand-color: #D2DCDE;
+// $brand-color: #E1E7EB;
+// $brand-color: #0e1213;
 
 // width bases(px) to calculate relative sizes:
 $xs: 320;
@@ -110,12 +114,11 @@ $xl: 1200;
 body {
     width: 100%;
     height: 100%;
-    background-color: $brand-color;    
-    // background: $brand-color url('../img/Kenzov-main-mob.jpg') no-repeat;
-    // background-size: cover;
-    // background-position: top center;
+    background-color: $brand-color;
     color: #ffffff;
     font-family: 'Montserrat', 'courier-std', sans-serif;
+    // font-family: 'Stick', sans-serif;
+    // font-family: 'Poiret One', cursive;
 }
 
 a {
@@ -126,11 +129,11 @@ a {
 .wrapper {
     width: 100%;
     height: 100vh;
-    background: $brand-color url('../img/Kenzov-main-mob.jpg') no-repeat;
+    background: $brand-color url('../img/OleynikStoboy-main-mob.png') no-repeat;
     background-size: cover;
     background-position: top center;
     font-size: calcSize(16, $xs);
-    
+
     @include mq(landmob) {
         font-size: calcSize(16, $sm);
     }
@@ -138,8 +141,10 @@ a {
         font-size: calcSize(16, $md);
     }
     @include mq(desktop) {
-        background: $brand-color url('../img/Kenzov-main-desk.jpg') no-repeat;
-        background-size: 70%;
+        background: $brand-color url('../img/OleynikStoboy-main-desk.png') repeat-y;
+        // background: $brand-color url('../img/OleynikStoboy-main-desk.png') no-repeat;
+        background-size: 80%;
+        // background-size: 100%;
         background-position: top center;
         font-size: calcSize(16, $lg);
     }

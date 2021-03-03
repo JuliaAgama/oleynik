@@ -11,3 +11,4 @@
 _brief/
 .DS_Store
 .idea
+git remote add origin https://github.com/JuliaAgama/oleynik.git

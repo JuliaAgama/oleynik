@@ -1,5 +1,5 @@
-# Kenzov oficcial site
+# Oleynik & STOBOY official site
 
 
 
-Web Preview link: https://juliaagama.github.io/kenzov/
+Web Preview link: https://juliaagama.github.io/oleynik/

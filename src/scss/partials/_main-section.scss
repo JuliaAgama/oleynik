@@ -5,28 +5,28 @@
 .main-section {
     position: relative;
     &_title {
-        padding-top: 56px;
+        font-family: 'Stick', sans-serif;
+        // font-family: 'Poiret One', cursive;
+        font-size: calcSize(40, $xs);
+        padding-top: 28px;
         @include mq(landmob) {
-            font-size: calcSize(80, $md);
+            font-size: calcSize(80, $sm);
+            margin-top: 10px;
             padding-top: 50px;
-            // padding-top: 0;
         }
-        // @include mq(landmob) {
         @include mq(tablet) {
-            font-size: calcSize(80, $md);
+            font-size: calcSize(60, $md);
             padding: 40px;
-            // padding-top: 0;
         }
         @include mq(desktop) {
             position: absolute;
-            top: 50vh;
+            top: 70vh;
+            // top: 50vh;
             // transform: translateY(-50%);
             width: 100vw;
-            background: rgba(14, 18, 19, 0.7);
+            background: rgba(14, 18, 19, 0.8);
             font-size: calcSize(60, $lg);
             padding: 20px;
-            // padding-top: 0;
-            // padding-top: 5px;
             margin-top: 0;
         }
     }

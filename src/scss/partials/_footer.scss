@@ -7,19 +7,19 @@
     width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: rgba(14, 18, 19, 0.7);
+    background-color: rgba(14, 18, 19, 0.8);
     font-size: calcSize(14, $xs);
     @include mq(landmob) {
         font-size: calcSize(14, $sm);
     }
     @include mq(tablet) {
-        font-size: calcSize(14, $md);
+        font-size: calcSize(20, $md);
     }
     @include mq(desktop) {
-        font-size: calcSize(14, $lg);
+        font-size: calcSize(20, $lg);
     }
     @include mq(xlarge) {
-        font-size: calcSize(14, $xl);
+        font-size: calcSize(20, $xl);
     }
 
     &_contacts {

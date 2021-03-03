@@ -7,7 +7,7 @@
     position: fixed;
     z-index: 1031;
     top: 0;
-    background: rgba(14, 18, 19, 0.7);
+    background: rgba(14, 18, 19, 0.8);
     @include mq(landmob) {
         font-size: calcSize(16, $sm);
     }
@@ -65,4 +65,7 @@
     }
 }
 
+.header i {
+    font-family: fontawesome !important;
+}
 
