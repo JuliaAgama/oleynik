@@ -1,0 +1,35 @@
+;// _main-section.scss
+
+/********** MAIN SECTION **********/
+
+.main-section {
+    position: relative;
+    &_title {
+        padding-top: 56px;
+        @include mq(landmob) {
+            font-size: calcSize(80, $md);
+            padding-top: 50px;
+            // padding-top: 0;
+        }
+        // @include mq(landmob) {
+        @include mq(tablet) {
+            font-size: calcSize(80, $md);
+            padding: 40px;
+            // padding-top: 0;
+        }
+        @include mq(desktop) {
+            position: absolute;
+            top: 50vh;
+            // transform: translateY(-50%);
+            width: 100vw;
+            background: rgba(14, 18, 19, 0.7);
+            font-size: calcSize(60, $lg);
+            padding: 20px;
+            // padding-top: 0;
+            // padding-top: 5px;
+            margin-top: 0;
+        }
+    }
+}
+
+
