@@ -17,7 +17,14 @@
 // font-family: courier-std,monospace;
 @import url("https://use.typekit.net/hte0isi.css");
 
-
+// specific fonts:
+@font-face {
+    font-family: 'American Captain Cyrillic';
+    // src: url('/american_captain_cyrillic_font.woff2')
+    // src: url('/american_captain_cyrillic_font.ttf')
+    src: url('american_captain_cyrillic_font.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('american_captain_cyrillic_font.woff2') format('woff') /* Modern Browsers */;
+}
 
 // COMMON VARIABLES, FUNCTIONS, MIXINS:
 
@@ -139,6 +146,9 @@ a {
     }
     @include mq(tablet) {
         font-size: calcSize(16, $md);
+        background: $brand-color url('../img/OleynikStoboy-main-desk.png') repeat-y;
+        background-size: 80%;
+        background-position: top center;
     }
     @include mq(desktop) {
         background: $brand-color url('../img/OleynikStoboy-main-desk.png') repeat-y;

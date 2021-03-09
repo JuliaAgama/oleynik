@@ -116,9 +116,17 @@ gulp.task('scripts', function () { //sends script.js to dist (different options 
 /*********** MINIFY IMAGES **********/
 
 gulp.task('image-min', function () {
-    return gulp.src('src/img/**/*.+(jpg|png|jpeg|svg)')
+    return gulp.src('src/img/**/*.+(jpg|png|jpeg|svg|ico)')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img/'))
+        .pipe(browserSync.reload({stream: true}))
+});
+
+/*********** COPY LOCAL FONTS **********/
+
+gulp.task('font-copy', function () {
+    return gulp.src('src/fonts/**/*.*')
+        .pipe(gulp.dest('dist/css/'))
         .pipe(browserSync.reload({stream: true}))
 });
 
@@ -141,6 +149,7 @@ gulp.task('watch', function () {
     gulp.watch('src/js/partials/*.js', gulp.series('scripts-src', 'scripts'));
     gulp.watch('./*.html').on('change', browserSync.reload);
     gulp.watch('src/img/**/*.+(jpg|png|jpeg|svg)', gulp.parallel('image-min'));
+    gulp.watch('src/fonts/**/*.*', gulp.parallel('font-copy'))
 });
 
 
@@ -149,7 +158,7 @@ gulp.task('watch', function () {
 /*********** MAIN TASKS **********/
 
 gulp.task('build', gulp.series('clean', 'scripts-src',
-                    gulp.parallel('styles', 'scripts', 'image-min')));
+                    gulp.parallel('styles', 'scripts', 'image-min', 'font-copy')));
 
 gulp.task('dev', gulp.parallel('browser-sync', 'watch'));
 

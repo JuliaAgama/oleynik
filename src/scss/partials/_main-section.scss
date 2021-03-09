@@ -5,18 +5,20 @@
 .main-section {
     position: relative;
     &_title {
-        font-family: 'Stick', sans-serif;
+        // font-family: sans-serif;
+        font-family: 'American Captain Cyrillic';
+        // font-family: 'American Captain Cyrillic', sans-serif;
+        // font-family: 'Stick', sans-serif;
         // font-family: 'Poiret One', cursive;
-        font-size: calcSize(40, $xs);
-        padding-top: 28px;
+        font-style: normal;
+        font-size: calcSize(50, $xs);
+        padding-top: 60px;
         @include mq(landmob) {
             font-size: calcSize(80, $sm);
             margin-top: 10px;
-            padding-top: 50px;
         }
         @include mq(tablet) {
-            font-size: calcSize(60, $md);
-            padding: 40px;
+            font-size: calcSize(70, $md);
         }
         @include mq(desktop) {
             position: absolute;
